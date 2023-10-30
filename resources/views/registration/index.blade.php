@@ -119,7 +119,6 @@
                 confirmButtonText: 'Sí, eliminarlo'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    // Aquí puedes enviar el formulario al servidor
                     $(this).unbind('submit').submit();
                 }
             });

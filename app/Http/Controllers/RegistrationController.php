@@ -107,8 +107,15 @@ class RegistrationController extends Controller
 
     public function destroy(Registration $registration)
     {
-        $registration->delete();
-        return redirect()->route('registrations.index');
+        $message = 'Registro eliminado con éxito';
+
+        try {
+            $registration->delete();
+        } catch (\Exception $e) {
+            $message = 'Error al eliminar el registro';
+        }
+        return redirect()->route('registrations.index')->with('message', $message);
     }
+
 
 }

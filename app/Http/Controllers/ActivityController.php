@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ActivityController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the activities.
      */
     public function index()
     {
@@ -16,7 +16,7 @@ class ActivityController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new activity.
      */
     public function create()
     {
@@ -24,7 +24,7 @@ class ActivityController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created activity in storage.
      */
     public function store(Request $request)
     {
@@ -32,7 +32,7 @@ class ActivityController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified activity.
      */
     public function show(Activity $activity)
     {
@@ -40,7 +40,7 @@ class ActivityController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified activity.
      */
     public function edit(Activity $activity)
     {
@@ -48,7 +48,7 @@ class ActivityController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified activity in storage.
      */
     public function update(Request $request, Activity $activity)
     {
@@ -56,7 +56,7 @@ class ActivityController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified activity from storage.
      */
     public function destroy(Activity $activity)
     {

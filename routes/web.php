@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\PeriodController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,5 +33,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('registrations', RegistrationController::class);
+
 
 require __DIR__.'/auth.php';

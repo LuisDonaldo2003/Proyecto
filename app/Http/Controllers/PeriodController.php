@@ -12,7 +12,7 @@ class PeriodController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -20,7 +20,7 @@ class PeriodController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -28,7 +28,7 @@ class PeriodController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -36,7 +36,7 @@ class PeriodController extends Controller
      */
     public function show(Period $period)
     {
-        //
+
     }
 
     /**
@@ -44,7 +44,7 @@ class PeriodController extends Controller
      */
     public function edit(Period $period)
     {
-        //
+
     }
 
     /**
@@ -52,7 +52,7 @@ class PeriodController extends Controller
      */
     public function update(Request $request, Period $period)
     {
-        //
+
     }
 
     /**
@@ -60,6 +60,6 @@ class PeriodController extends Controller
      */
     public function destroy(Period $period)
     {
-        //
+
     }
 }

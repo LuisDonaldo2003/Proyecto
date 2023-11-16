@@ -323,11 +323,14 @@ return [
             'route'  => 'registrations.create',
             'icon'  => 'far fa-address-card',
         ],
+        ['header' => 'CRUD'],
         [
-            'text' => 'CRUD',
+            'text' => 'Inscripción',
             'route'  => 'registrations.index',
             'icon'  => 'fas fa-list-ul',
         ],
+
+
 
     ],
 

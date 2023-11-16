@@ -34,17 +34,16 @@ class StaffController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Staff $staff)
+    public function show($id)
     {
         //
     }
-
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(Staff $staff)
     {
-        //
+
     }
 
     /**
@@ -54,6 +53,7 @@ class StaffController extends Controller
     {
         //
     }
+
 
     /**
      * Remove the specified resource from storage.

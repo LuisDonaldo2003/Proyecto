@@ -22,7 +22,8 @@ class ApiRegistrationController extends Controller
 
     public function store(StoreRegistrationRequest $request)
     {
-        return new RegistrationResource(Registration::create($request->all()));
+        $registration = Registration::create($request->all());
+        return response()->json(['message' => 'Registro creado exitosamente', 'data' => new RegistrationResource($registration)]);
     }
 
     public function show(Registration $registration)
@@ -33,6 +34,7 @@ class ApiRegistrationController extends Controller
     public function update(UpdateRegistrationRequest $request, Registration $registration)
     {
         $registration->update($request->all());
+        return response()->json(['message' => 'Registro actualizado exitosamente', 'data' => new RegistrationResource($registration)]);
     }
 
     public function destroy(Registration $registration)
@@ -42,4 +44,3 @@ class ApiRegistrationController extends Controller
         return response()->json(['message' => 'Registro eliminado exitosamente']);
     }
 }
-
